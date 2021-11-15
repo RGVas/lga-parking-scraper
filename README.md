@@ -1,5 +1,4 @@
-# lga-lot-data
-Source code for scraping LaGuardia terminal lot capacity using puppeteer and Google Cloud
+# LaGuardia Parking Scraper
 
 ## How it Works
 ### Google Cloud Function
