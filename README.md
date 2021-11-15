@@ -1,5 +1,4 @@
-# lga-lot-data
-LaGuardia Parking Scraper
+# LaGuardia Parking Scraper
 
 ## How it Works
 ### Google Cloud Function
