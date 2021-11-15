@@ -22,9 +22,10 @@ node index.js
 ```
 ## How it Works
 ### Steps
-1. A job is created via Google Cloud Scheduler to call the cloud function every 30 minutes
-2. The cloud function then scrapes lot data from LGA website and imports it into BigQuery
-3. The BigQuery dataset is then loaded into Data Studio for data visualization - graphs are updated every 15 minutes
+1. A cloud function is created to run code
+2. A cloud scheduler job is created to call the cloud function every 30 minutes
+3. The cloud function then scrapes lot data from LGA website and imports it into BigQuery
+4. The BigQuery dataset is loaded into Data Studio for data visualization - graphs are updated every 15 minutes
 
 ### Google Cloud Function
 Source code is added to a cloud function. A service account is then added as a cloud function admin so that Cloud Scheduler can call the cloud function.  
