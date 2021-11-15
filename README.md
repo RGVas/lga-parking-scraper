@@ -3,15 +3,14 @@ Source code for scraping LaGuardia terminal lot capacity using puppeteer and Goo
 
 ## How it Works
 ### Google Cloud Function
-Source code is added to a cloud function. A service account is then created as a cloud functions admin so that Cloud Scheduler can call the cloud function.
+Source code is added to a cloud function. A service account is then added as a cloud function admin so that Cloud Scheduler can call the cloud function.  
+
+![alt text](https://github.com/RGVas/lga-lot-data/blob/master/images/cloud-function.png)
 
 ### Google Cloud Scheduler
-A job is created to run the google cloud function every 30 minutes.
+A job is created to run the google cloud function every 30 minutes.  
 
-cron syntax:
-```
-* /30 * * * *  
-```
+![alt text](https://github.com/RGVas/lga-lot-data/blob/master/images/cloud-scheduler.png)
 
 ### Google BigQuery  
 A dataset is created within BigQuery to hold terminal lot capacity data. 
