@@ -1,5 +1,8 @@
 # LaGuardia Parking Scraper
 
+### Data Studio
+https://datastudio.google.com/reporting/cb41efed-ecb8-4781-a50e-62f1fcc18002
+
 ### Notice
 **This program can only be used if the computer is authenticated to a google cloud project - the code is designed to be ran via a cloud function.** 
 
