@@ -1,5 +1,8 @@
 # LaGuardia Parking Scraper
 
+### Notice
+**This program can only be used if the computer is authenticated to a google cloud project - this code is designed to be ran via a cloud function.** 
+
 ## Installation & Running
 Clone the repository
 ```
@@ -13,8 +16,11 @@ Run index.js
 ```
 node index.js
 ```
-
 ## How it Works
+### Steps
+1. A job is created via Google Cloud Scheduler to call the cloud function every 30 minutes
+2. The cloud function then scrapes lot data from LGA website and imports it into BigQuery
+3. 
 ### Google Cloud Function
 Source code is added to a cloud function. A service account is then added as a cloud function admin so that Cloud Scheduler can call the cloud function.  
 
