@@ -43,4 +43,3 @@ A dataset is created within BigQuery to hold terminal lot capacity data.
 
 ### Google Data Studio  
 Data from BigQuery table is then displayed using Data Studio.
-![alt text](https://github.com/RGVas/lga-lot-data/blob/master/images/data-studio.PNG)
