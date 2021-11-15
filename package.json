@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/RGVas/lga-lot-data/issues"
   },
-  "homepage": "https://github.com/RGVas/lga-lot-data#readme"
+  "homepage": "https://github.com/RGVas/lga-lot-data#readme",
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.9.1",
+    "puppeteer": "^11.0.0",
+    "luxon": "^2.1.1"
+  }
 }
