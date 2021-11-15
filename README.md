@@ -1,5 +1,19 @@
 # LaGuardia Parking Scraper
 
+## Installation & Running
+Clone the repository
+```
+https://github.com/RGVas/lga-lot-data.git
+```
+Install library dependences
+```
+npm install
+```
+Run index.js
+```
+node index.js
+```
+
 ## How it Works
 ### Google Cloud Function
 Source code is added to a cloud function. A service account is then added as a cloud function admin so that Cloud Scheduler can call the cloud function.  
@@ -16,17 +30,3 @@ A dataset is created within BigQuery to hold terminal lot capacity data.
 
 ### Google Data Studio  
 Data from BigQuery table is then displayed using Data Studio.
-
-## Installation & Running
-Clone the repository
-```
-https://github.com/RGVas/lga-lot-data.git
-```
-Install library dependences
-```
-npm install
-```
-Run index.js
-```
-node index.js
-```
