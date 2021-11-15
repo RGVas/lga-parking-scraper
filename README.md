@@ -1,7 +1,7 @@
 # LaGuardia Parking Scraper
 
 ### Notice
-**This program can only be used if the computer is authenticated to a google cloud project - this code is designed to be ran via a cloud function.** 
+**This program can only be used if the computer is authenticated to a google cloud project - the code is designed to be ran via a cloud function.** 
 
 ## Installation & Running
 Clone the repository
