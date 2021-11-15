@@ -2,10 +2,12 @@ const puppeteer = require('puppeteer');
 const bigQuery = require('./bigquery.js');
 const { DateTime } = require("luxon");
 
-/**
- * Gets current date and time
+/*
+ 
+Gets current date and time in New York.
 
- */
+*/
+
 const getDateTime = () => {
 	const dateTime = DateTime.now().setZone("America/New_York")
 	const date = dateTime.c.year + '-' + dateTime.c.month + '-' + dateTime.c.day
@@ -14,12 +16,13 @@ const getDateTime = () => {
 	return [date, time]
 };
 
-/**
- * Scrapes data from LGA website and imports data into BigQuery
- *
-    * @param url[String] - URL for LGA website
-    * @param paths[Array] - An array of xpath strings for data
- */
+/*
+ 
+Function to scrape data from LGA website and import into BigQuery
+    param url[String] - URL for LGA website
+    param paths[Array] - An array of xpath strings for data
+
+*/
 
 const scrapeData = async (url, paths) => {
     const dateTime = getDateTime()
@@ -38,8 +41,6 @@ const scrapeData = async (url, paths) => {
         let results = await page.$x(paths[i])
         let res = await page.evaluate(el => el.textContent, results[0]);
         let capacity = parseFloat(res.trim().slice(0,2));
-
-
         lotData[terminals[i]] = capacity
     };
 

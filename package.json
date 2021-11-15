@@ -1,0 +1,20 @@
+{
+  "name": "lga-lot-data",
+  "version": "1.0.0",
+  "description": "Source code for scraping LaGuardia terminal lot capacity using puppeteer and Google Cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGVas/lga-lot-data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGVas/lga-lot-data/issues"
+  },
+  "homepage": "https://github.com/RGVas/lga-lot-data#readme"
+}

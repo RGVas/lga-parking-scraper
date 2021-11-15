@@ -1,12 +1,12 @@
 //Import modules
 const scraper = require('./scraper.py')
 
-/**
- * Responds to HTTP request.
- *
-    * @param {!express:Request} req HTTP request context.
-    * @param {!express:Response} res HTTP response context.
- */
+/*
+
+Entry point for Google Cloud Function.
+If data successfuly scraped, send client 200 status
+
+*/
 
 exports.getData = (req, res) => {
     const url = 'https://www.laguardiaairport.com/to-from-airport/parking';
