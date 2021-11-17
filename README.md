@@ -1,4 +1,4 @@
-# LaGuardia Parking Scraper
+# LaGuardia Parking Web Scraper
 
 ### Data Studio
 Please find link to data visualization below. Data is currently being tracked every 30 minutes.
